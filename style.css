@@ -1,0 +1,21 @@
+
+body {
+    background-color: black;
+}
+#bg {
+    display: flex;
+    column-gap: 20px;
+    justify-self: center;
+    padding: 20px;
+    background-color: grey;
+    border: 10px solid lightgray;
+    border-radius: 5px;
+}
+.holder {
+    color: white;
+    background: black;
+    padding: 15px;
+    font-size: xx-large;
+    font-family: monospace;
+    border-radius: 10px;
+}
