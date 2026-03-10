@@ -16,6 +16,56 @@
         <button id="startBtn" onclick="start()">START</button>
         <button id="pauseBtn" onclick="pause('RESUME')">PAUSE</button>
         <button id="resetBtn" onclick="reset()">RESET</button>
+        <br/><br/>
+        <center>
+            <button onclick="showTools()">Customize</button>
+            <p id="logger" class="disp_none">slected element is...</p>
+        </center>
+        
+        <div id="toolsHolder">
+            <h3>BODERS</h3>
+            <button onclick="styleUp('bg')">Adjust Main watch Borders
+            </button>
+            <button onclick="styleUp('hours')">Adjust Hours Border
+            </button>
+            <button onclick="styleUp('mins')">Adjust Minutes Border
+            </button>
+            <button onclick="styleUp('secs')">Adjust Seconds Border
+            </button>
+            <button onclick="styleUp('millisecs')">Adjust Milliseconds Boder
+            </button>
+            <button onclick="styleUp('startBtn')">Adjust 'START' Border
+            </button>
+            <button onclick="styleUp('pauseBtn')">Adjust 'PAUSE' Border
+            </button>
+            <button onclick="styleUp('resetBtn')">
+                Adjust 'RESET' order
+            </button>
+            <h3>COLORS</h3>
+            <button onclick="styleUp('bg')">Adjust Main watch background
+            </button>
+            <button onclick="styleUp('hours')">Adjust Hours background
+            </button>
+            <button onclick="styleUp('mins')">Adjust Minutes background
+            </button>
+            <button onclick="styleUp('secs')">Adjust Seconds Border
+            </button>
+            <button onclick="styleUp('millisecs')">Adjust Milliseconds background
+            </button>
+            <button onclick="styleUp('startBtn')">Adjust 'START' Border
+            </button>
+            <button onclick="styleUp('pauseBtn')">Adjust 'PAUSE' background
+            </button>
+            <button onclick="styleUp('resetBtn')">
+                Adjust 'RESET' background 
+            </button>
+        </div>
+        <span class="disp_none">Border Radius</span>
+        <input type="range" id="rangeInpt" class="disp_none" onchange="getRange()"/>
+        <br />
+        <span class="disp_none">Border Width</span>
+        <input type="range" id="borderWidth_inpt" class="disp_none" onchange="changeBorder_wdth()"/>
+        <input type="color" id="colInpt" class="disp_none" onchange="getCol()"/>
 
         <script src="main.js"></script>
     </body>

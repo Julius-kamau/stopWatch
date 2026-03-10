@@ -1,6 +1,7 @@
 
 body {
     background-color: black;
+    color: white;
 }
 #bg {
     display: flex;
@@ -10,6 +11,24 @@ body {
     background-color: grey;
     border: 10px solid lightgray;
     border-radius: 5px;
+}
+#toolsHolder {
+   display: flex;
+   display: none;
+   overflow-x: scroll;
+   width: 97vw;
+}
+#rangeInpt {
+    width: 93vw;
+}
+#borderWidth_inpt {
+    width: 93vw;
+}
+#colInpt {
+    width: 93vw;
+}
+.disp_none {
+    display: none;
 }
 .holder {
     color: white;
