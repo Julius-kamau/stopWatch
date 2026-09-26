@@ -137,4 +137,46 @@ function loadStyles() {
     }
 }
 
+
+function fetchPrices(){
+    fetch("https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT")
+  .then(res => res.json())
+  .then(data => console.log(data));
+/* fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd")
+    .then(res => res.json())
+    .then(data => console.log(data));*/
+}
+
+//setInterval(fetchPrices, 5000);
+
+//With async/await (much cleaner)
+
+/*async function getData() {
+  try {
+    const response = await fetch("https://api.example.com/data");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+getData();
+
+async function sendData() {
+  const response = await fetch("https://api.example.com/users", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: "Julius",
+      age: 20
+    })
+  });
+
+  const data = await response.json();
+  console.log(data);
+}*/
+
 window.onload = loadStyles;
